@@ -10,8 +10,7 @@ SOCKET = "wss://stream.binance.com:9443/ws/ethusdt@kline_4h"
 ## GLOBAL VARIABLES ##
 start = 19
 position = "sell"
-closes = np.array([0, 1662.78, 1741.99, 1709.91, 1719.19, 1682.19, 1673.32, 1679.67, 1673.04, 1707.67, 1676.35, 1626.53, 1632.00, 1624.91, 1538.21, 1565.44, 1611.62, 1581.46, 1639.59, 1660.48])
-
+closes = np.zeros(20)
 ## WEBSOCKET FUNCTIONS ##
 def on_open(ws):
     print("Connection opened at", dt.datetime.now())
